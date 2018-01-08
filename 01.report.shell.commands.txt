@@ -1,0 +1,74 @@
+echo hello world
+hello world
+
+passwd
+Changing password for minhvu103.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+date
+Mon Jan  8 04:26:40 EST 2018
+
+hostname
+minhvu103-HP-Pavilion-g4-Notebook-PC
+
+arch
+x86_64
+
+uname -a
+Linux minhvu103-HP-Pavilion-g4-Notebook-PC 4.13.0-16-generic #19-Ubuntu SMP Wed Oct 11 18:35:14 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+dmesg
+[    0.000000] random: get_random_bytes called from start_kernel+0x42/0x4e1 with crng_init=0
+[    0.000000] Linux version 4.13.0-16-generic (buildd@lcy01-02) (gcc version 7.2.0 (Ubuntu 7.2.0-8ubuntu2)) #19-Ubuntu SMP Wed Oct 11 18:35:14 UTC 2017 (Ubuntu 4.13.0-16.19-generic 4.13.4)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.13.0-16-generic.efi.signed root=UUID=4425cf86-a4c9-477e-839f-d96de9ccfc71 ro quiet splash vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x0000000000087fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000088000-0x00000000000bffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000001fffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000020000000-0x00000000201fffff] reserved
+
+uptime
+ 04:26:56 up  1:20,  1 user,  load average: 0.45, 0.57, 0.51
+
+whoami
+minhvu103
+
+who
+minhvu103 tty2         2018-01-08 10:07 (/dev/tty2)
+
+id
+uid=1000(minhvu103) gid=1000(minhvu103) groups=1000(minhvu103),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),118(lpadmin),128(sambashare)
+
+last
+minhvu10 tty2         /dev/tty2        Mon Jan  8 10:07   still logged in
+reboot   system boot  4.13.0-16-generi Mon Jan  8 10:06   still running
+minhvu10 tty2         /dev/tty2        Fri Jan  5 07:39 - down   (-6:-51)
+reboot   system boot  4.13.0-16-generi Fri Jan  5 07:38 - 00:47  (-6:-50)
+minhvu10 tty2         /dev/tty2        Fri Jan  5 06:40 - 06:40  (00:00)
+reboot   system boot  4.13.0-16-generi Fri Jan  5 06:39 - 06:40  (00:01)
+
+wtmp begins Fri Jan  5 06:39:36 2018
+
+finger
+Login      Name        Tty      Idle  Login Time   Office     Office Phone
+minhvu103  minhvu103   tty2           Jan  8 10:07 (/dev/tty2)
+
+w
+ 04:27:29 up  1:20,  1 user,  load average: 0.89, 0.66, 0.54
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+minhvu10 tty2     /dev/tty2        10:07     ?     7:18   1:36  /usr/lib/firefo
+
+
+
