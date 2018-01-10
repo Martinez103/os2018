@@ -1,0 +1,23 @@
+ls |grep "list" 
+list
+
+wc /etc/passwd
+  41   70 2292 /etc/passwd
+
+free
+              total        used        free      shared  buff/cache   available
+Mem:        3932612     1352288      197672      316120     2382652     2184308
+Swap:       1897064           0     1897064
+
+cat /proc/cpuinfo
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx f16c lahf_lm cpuid_fault epb tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm arat pln pts
+bugs		:
+bogomips	: 4789.33
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+
+find /Users/minhvu103/Pictures |grep ".jpg" |wc -l
+find: ‘/Users/minhvu103/Pictures’: No such file or directory
+0
+
