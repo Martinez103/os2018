@@ -1,0 +1,42 @@
+ps man
+  PID TTY      STAT   TIME COMMAND
+  801 tty1     -      0:00 /usr/lib/gdm3/gdm-wayland-session gnome-session --aut
+    - -        Ssl+   0:00 -
+    - -        Ssl+   0:00 -
+    - -        Ssl+   0:00 -
+  805 tty1     -      0:00 /usr/lib/gnome-session/gnome-session-binary --autosta
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+  814 tty1     -      0:03 /usr/bin/gnome-shell
+    - -        Sl+    0:02 -
+
+
+gnome-calculator
+
+ps aux| grep gnome-calculator
+minhvu1+  1841  0.4  0.9 811360 39212 pts/2    Sl+  20:58   0:00 gnome-calculator
+minhvu1+  1894  0.0  0.0  21452  1128 pts/1    S+   20:59   0:00 grep --color=auto gnome-calculator
+
+cat /proc/1841/status
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+Tgid:	1841
+Ngid:	0
+Pid:	1841
+PPid:	1831
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	4 24 27 30 46 118 128 1000 
+NStgid:	1841
+NSpid:	1841
+NSpgid:	1841
+NSsid:	1831
+
+kill -STOP 1841
+kill -CONT 1841
+kill -9 1841
