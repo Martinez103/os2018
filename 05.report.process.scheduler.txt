@@ -1,0 +1,28 @@
+cat /proc/sched_debug | awk '/systemd / {print$4}'
+163
+80
+52203
+
+cat /proc/771/sched 
+systemd (771, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :         52878.142758
+se.vruntime                                  :            26.090336
+se.sum_exec_runtime                          :            54.860805
+se.nr_migrations                             :                   25
+nr_switches                                  :                   80
+nr_voluntary_switches                        :                   76
+nr_involuntary_switches                      :                    4
+se.load.weight                               :              1048576
+se.avg.load_sum                              :              1827847
+se.avg.util_sum                              :              1827847
+se.avg.load_avg                              :                   39
+se.avg.util_avg                              :                   39
+se.avg.last_update_time                      :          52878142464
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                   66
+
+cat /proc/771/sched | awk '/nr_switches / {print$3}'
+80
+
