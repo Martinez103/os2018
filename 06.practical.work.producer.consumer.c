@@ -7,9 +7,9 @@
 #define BUFFER_SIZE 10
 
 typedef struct{
-char type;
+int type;
 int amount;
-char unit;
+int unit;
 } item;
 item buffer[BUFFER_SIZE];
 
@@ -36,7 +36,7 @@ item *consume() {
 	return i;
 }
 
-item create(char x,int y,char z){
+item create_item(char x,int y,char z){
 item curr;
 curr.type = x;
 curr.amount = y;
@@ -50,8 +50,8 @@ printf("first=%d, \nlast=%d\n",first,last);
 
 int main(){
 item i1,i2;
-i1 = create(1,4,3);
-i2 = create(5,1,8);
+i1 = create_item(1,4,3);
+i2 = create_item(5,1,8);
 item *p1 = &i1;
 item *p2 = &i2;
 printf("Produce 1st time:\n");
