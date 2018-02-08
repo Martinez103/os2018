@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+
 #define BUFFER_SIZE 10
 
 typedef struct{
@@ -35,11 +36,11 @@ item *consume() {
 	return i;
 }
 
-item *create(char x,int y,char z){
-item *curr = malloc(sizeof(item));
-curr->type = x;
-curr->amount = y;
-curr->unit = z;
+item create(char x,int y,char z){
+item curr;
+curr.type = x;
+curr.amount = y;
+curr.unit = z;
 return curr;
 }
 
@@ -48,13 +49,18 @@ printf("first=%d, \nlast=%d\n",first,last);
 }
 
 int main(){
-item *i1;
+item i1,i2;
 i1 = create(1,4,3);
-produce(i1);
+i2 = create(5,1,8);
+item *p1 = &i1;
+item *p2 = &i2;
+printf("Produce 1st time:\n");
+produce(p1);
 display();
-i1 = create(5,1,8);
-produce(i1);
+printf("Produce 2nd time:\n");
+produce(p2);
 display();
+printf("Consume 1st time:\n");
 consume();
 display();
 
